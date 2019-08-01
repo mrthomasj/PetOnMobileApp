@@ -1,6 +1,7 @@
 package com.etec.peton;
 
 import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 
@@ -10,12 +11,13 @@ import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.widget.Toast;
 
-public class MainActivity extends AppCompatActivity {
+
+public class Home extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_home);
         Toolbar tb = findViewById(R.id.toolbar);
         setSupportActionBar(tb);
     }
@@ -45,8 +47,8 @@ public class MainActivity extends AppCompatActivity {
             case R.id.subItem2:
                 Toast.makeText(this, "Sub item 2 is selected.", Toast.LENGTH_LONG).show();
                 return true;
-            default:
-                return super.onOptionsItemSelected(item);
+                default:
+                    return super.onOptionsItemSelected(item);
         }
     }
 }

@@ -12,7 +12,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="112dp"
         android:layout_marginBottom="566dp"
-        app:layout_constraintBottom_toTopOf="@+id/toolbar"
+
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0"
         app:srcCompat="@drawable/ic_launcher_background"
@@ -21,10 +21,11 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="84dp"
+        android:layout_marginBottom="120dp"
         android:orientation="vertical"
-        app:layout_constraintTop_toBottomOf="@id/logo"
-        tools:layout_editor_absoluteX="0dp">
+        app:layout_constraintBottom_toTopOf="parent"
+        app:layout_constraintTop_toBottomOf="parent"
+        tools:layout_editor_absoluteX="77dp">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -67,14 +68,22 @@
         </LinearLayout>
 
     </LinearLayout>
-    <androidx.appcompat.widget.Toolbar
-        android:id="@+id/toolbar"
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
         android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_marginTop="678dp"
-        android:background="?attr/colorPrimary"
-        android:minHeight="?attr/actionBarSize"
-        android:theme="?attr/actionBarTheme"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        tools:layout_editor_absoluteX="0dp" />
+        tools:layout_editor_absoluteX="0dp">
+
+        <include
+            android:id="@+id/toolbar"
+            layout="@layout/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true" />
+
+    </RelativeLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
