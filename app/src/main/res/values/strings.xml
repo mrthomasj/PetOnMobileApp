@@ -1,7 +1,12 @@
 <resources>
     <string name="app_name">PetOn</string>
+<<<<<<< Updated upstream
     <string name="title_activity_main_screen">MainScreen</string>
     <string name="title_home">Home</string>
     <string name="title_dashboard">Dashboard</string>
     <string name="title_notifications">Notifications</string>
+=======
+    <string name="register">Cadastrar</string>
+    <string name="rgstrBtn"><u>Criar novo usuário</u></string>
+>>>>>>> Stashed changes
 </resources>
